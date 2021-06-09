@@ -16,13 +16,10 @@
 #     mysql -u root -p < /docker-entrypoint-initdb.d/createdb.sql
 #
 
-#CREATE DATABASE IF NOT EXISTS `dev_db_1` COLLATE 'utf8_general_ci' ;
-#GRANT ALL ON `dev_db_1`.* TO 'default'@'%' ;
+CREATE DATABASE IF NOT EXISTS `jarvisdb` COLLATE 'utf8_general_ci' ;
+GRANT ALL ON `jarvisdb`.* TO 'default'@'%' ;
 
-#CREATE DATABASE IF NOT EXISTS `dev_db_2` COLLATE 'utf8_general_ci' ;
-#GRANT ALL ON `dev_db_2`.* TO 'default'@'%' ;
-
-#CREATE DATABASE IF NOT EXISTS `dev_db_3` COLLATE 'utf8_general_ci' ;
-#GRANT ALL ON `dev_db_3`.* TO 'default'@'%' ;
+CREATE DATABASE IF NOT EXISTS `test` COLLATE 'utf8_general_ci' ;
+GRANT ALL ON `test`.* TO 'default'@'%' ;
 
 FLUSH PRIVILEGES ;
